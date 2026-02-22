@@ -49,4 +49,10 @@
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js'></script>
 <script src='app.js'></script>
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("service-worker.js")
+  .then(()=>console.log("Service Worker Registered"));
+}
+  </script>
 </body></html>
